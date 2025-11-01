@@ -192,8 +192,8 @@ export default function ValidatePage() {
                             placeholder="000.000.000-00"
                             maxLength={14}
                             className={`w-full px-4 py-3 border-2 rounded-lg text-black placeholder-gray-400 focus:outline-none focus:ring-0 transition-colors ${errors.cpf
-                                    ? 'border-black bg-gray-50'
-                                    : 'border-gray-300 focus:border-black'
+                                ? 'border-black bg-gray-50'
+                                : 'border-gray-300 focus:border-black'
                                 }`}
                         />
                         {errors.cpf && (
@@ -218,8 +218,8 @@ export default function ValidatePage() {
                             value={formData.birthDate}
                             onChange={handleInputChange}
                             className={`w-full px-4 py-3 border-2 rounded-lg text-black focus:outline-none focus:ring-0 transition-colors ${errors.birthDate
-                                    ? 'border-black bg-gray-50'
-                                    : 'border-gray-300 focus:border-black'
+                                ? 'border-black bg-gray-50'
+                                : 'border-gray-300 focus:border-black'
                                 }`}
                         />
                         {errors.birthDate && (
@@ -246,8 +246,8 @@ export default function ValidatePage() {
                             placeholder="(00) 00000-0000"
                             maxLength={15}
                             className={`w-full px-4 py-3 border-2 rounded-lg text-black placeholder-gray-400 focus:outline-none focus:ring-0 transition-colors ${errors.phone
-                                    ? 'border-black bg-gray-50'
-                                    : 'border-gray-300 focus:border-black'
+                                ? 'border-black bg-gray-50'
+                                : 'border-gray-300 focus:border-black'
                                 }`}
                         />
                         {errors.phone && (
@@ -293,6 +293,21 @@ export default function ValidatePage() {
                         <li>• Idade mínima de 18 anos</li>
                         <li>• Telefone deve conter 10 ou 11 dígitos</li>
                     </ul>
+                </div>
+
+                {/* Footer */}
+                <div className="mt-6 text-center">
+                    <p className="text-sm text-gray-600">
+                        Criado por{' '}
+                        <a
+                            href="https://github.com/mviniciusca"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-medium text-black hover:underline"
+                        >
+                            Marcos Coelho
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
